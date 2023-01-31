@@ -36,18 +36,8 @@ html, body {
   font-family: "Didact Gothic", sans-serif;
 }
 
-@font-face {
-  font-family: "Lato";
-  src: local("Lato"), url("../../fonts/Lato-Black.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"), url("../../fonts/Roboto-Light.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"), url("../../fonts/Roboto-Regular.ttf") format("ttf");
-}
+
+
 /*Preloader*/
 .preloader {
   position: fixed;
