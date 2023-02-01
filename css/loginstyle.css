@@ -137,6 +137,7 @@ html, body {
 }
 
 .title_asp {
+  width: 100%;
   font-family: 'Asap', sans-serif;
   font-weight: 900;
   color: #FF0000;
