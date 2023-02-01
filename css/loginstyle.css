@@ -8,13 +8,13 @@
   font-weight: 300;
   font-style: normal;
 }
-@font-face {
+/*@font-face {
   font-family: "Conv_Lato-Black";
   src: url("../fonts/Lato-Black.eot");
   src: local("☺"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.svg") format("svg");
   font-weight: 900;
   font-style: normal;
-}
+}*/
 @font-face {
   font-family: "Conv_Roboto-Regular";
   src: url("../fonts/Roboto-Regular.eot");
@@ -133,7 +133,7 @@ html, body {
 }
 
 .title_my {
-  font-family: "Conv_Lato-Black", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 52px;
   color: #1400FF;
@@ -142,7 +142,7 @@ html, body {
 }
 
 .title_asp {
-  font-family: "Conv_Lato-Black", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 52px;
   color: #FF0000;
@@ -152,7 +152,7 @@ html, body {
 
 .title_adm {
   text-align: right;
-  font-family: "Conv_Lato-Black", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 20px;
   margin-top: -20px;
@@ -563,5 +563,3 @@ html, body {
     font-size: 12px;
   }
 }
-
-sourceMappingURL=loginstyle.css.map
