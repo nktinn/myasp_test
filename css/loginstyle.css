@@ -1,25 +1,11 @@
 @charset "UTF-8";
-/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 @font-face {
-  font-family: "Conv_Roboto-Light";
-  src: url("../fonts/Roboto-Light.eot");
-  src: local("☺"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.svg") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-/*@font-face {
-  font-family: "Conv_Lato-Black";
+  font-family: "Lato";
   src: url("../fonts/Lato-Black.eot");
-  src: local("☺"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.svg") format("svg");
+  src: local("☺"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.ttf") format("truetype");
   font-weight: 900;
-  font-style: normal;
-}*/
-@font-face {
-  font-family: "Conv_Roboto-Regular";
-  src: url("../fonts/Roboto-Regular.eot");
-  src: local("☺"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg") format("svg");
-  font-weight: 400;
   font-style: normal;
 }
 /*Обнуление*/
@@ -161,7 +147,7 @@ html, body {
 
 .title_enter {
   margin-top: 10%;
-  font-family: "Conv_Roboto-Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 45px;
   line-height: 70px;
@@ -169,7 +155,7 @@ html, body {
 
 .title_input {
   padding-left: 20px;
-  font-family: "Conv_Roboto-Light", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 28px;
   line-height: 35px;
@@ -184,7 +170,7 @@ html, body {
 }
 
 .title_enter_button {
-  font-family: "Conv_Roboto-Light", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 32px;
   line-height: 50px;
@@ -197,7 +183,7 @@ html, body {
 }
 
 .title_enters_button {
-  font-family: "Conv_Roboto-Light", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 24px;
   line-height: 40px;
@@ -217,7 +203,7 @@ html, body {
 }
 
 .title_forgot_pass {
-  font-family: "Conv_Roboto-Light", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
@@ -253,7 +239,7 @@ html, body {
 
 [tooltip]::after {
   content: attr(tooltip);
-  font-family: "Conv_Roboto-Light", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   min-width: 3em;
   max-width: 21em;
@@ -562,4 +548,4 @@ html, body {
   [tooltip]::after {
     font-size: 12px;
   }
-}
+}/*# sourceMappingURL=loginstyle.css.map */
