@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*@import url(https://allfont.net/allfont.css?fonts=asap-bold);
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");*/
+@import url(https://allfont.net/allfont.css?fonts=asap-bold);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 
 /*Обнуление*/
@@ -113,7 +113,7 @@ html, body {
 }
 
 .title_my {
-  /*font-family: 'Asap Bold', arial;*/
+  font-family: 'Asap Bold', arial;
   font-weight: 900;
   font-size: 52px;
   color: #1400FF;
@@ -122,7 +122,7 @@ html, body {
 }
 
 .title_asp {
-  /*font-family: 'Asap Bold', arial;*/
+  font-family: 'Asap Bold', arial;
   font-weight: 900;
   font-size: 52px;
   color: #FF0000;
@@ -132,7 +132,7 @@ html, body {
 
 .title_adm {
   text-align: right;
-  /*font-family: 'Asap Bold', arial;*/
+  font-family: 'Asap Bold', arial;
   font-weight: 900;
   font-size: 20px;
   margin-top: -20px;
@@ -141,16 +141,16 @@ html, body {
 
 .title_enter {
   margin-top: 10%;
-  /*font-family: "Roboto", sans-serif;
-  font-weight: 400;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 45px;
   line-height: 70px;
 }
 
 .title_input {
   padding-left: 20px;
-  /*font-family: "Roboto", sans-serif;
-  font-weight: 300;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 28px;
   line-height: 35px;
   color: black;
@@ -164,8 +164,8 @@ html, body {
 }
 
 .title_enter_button {
-  /*font-family: "Roboto", sans-serif;
-  font-weight: 300;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 32px;
   line-height: 50px;
   color: rgba(0, 0, 0, 0.5);
@@ -177,8 +177,8 @@ html, body {
 }
 
 .title_enters_button {
-  /*font-family: "Roboto", sans-serif;
-  font-weight: 300;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 24px;
   line-height: 40px;
   width: 100%;
@@ -197,8 +197,8 @@ html, body {
 }
 
 .title_forgot_pass {
-  /*font-family: "Roboto", sans-serif;
-  font-weight: 300;*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 20px;
   line-height: 23px;
   color: rgba(0, 0, 0, 0.3);
@@ -233,7 +233,7 @@ html, body {
 
 [tooltip]::after {
   content: attr(tooltip);
-  /*font-family: "Roboto", sans-serif;*/
+  font-family: "Roboto", sans-serif;
   text-align: center;
   min-width: 3em;
   max-width: 21em;
