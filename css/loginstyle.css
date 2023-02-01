@@ -114,6 +114,7 @@ html, body {
 
 .title_my {
   font-family: 'Asap Bold', arial;
+  font-weight: 900;
   font-size: 52px;
   color: #1400FF;
   padding: 0;
@@ -122,6 +123,7 @@ html, body {
 
 .title_asp {
   font-family: 'Asap Bold', arial;
+  font-weight: 900;
   font-size: 52px;
   color: #FF0000;
   margin-left: 6px;
@@ -131,6 +133,7 @@ html, body {
 .title_adm {
   text-align: right;
   font-family: 'Asap Bold', arial;
+  font-weight: 900;
   font-size: 20px;
   margin-top: -20px;
   color: #FF0000;
