@@ -143,6 +143,8 @@ html, body {
   color: #FF0000;
   margin-left: 6px;
   padding: 0;
+  display:flex;
+  justify-content: flex-end;
 }
 
 .title_adm {
