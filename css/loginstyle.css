@@ -115,7 +115,7 @@ html, body {
 .title_my {
   font-family: 'Asap Bold', arial;
   font-weight: 900;
-  font-size: 55px;
+  font-size: 52px;
   color: #1400FF;
   padding: 0;
   margin: 0;
@@ -124,7 +124,7 @@ html, body {
 .title_asp {
   font-family: 'Asap Bold', arial;
   font-weight: 900;
-  font-size: 55px;
+  font-size: 52px;
   color: #FF0000;
   margin-left: 6px;
   padding: 0;
@@ -468,10 +468,10 @@ html, body {
     margin: 0px auto;
   }
   .title_my {
-    font-size: 26px;
+    font-size: 28px;
   }
   .title_asp {
-    font-size: 26px;
+    font-size: 28px;
   }
   .title_adm {
     font-size: 12px;
@@ -513,10 +513,10 @@ html, body {
     margin: 0px auto;
   }
   .title_my {
-    font-size: 22px;
+    font-size: 24px;
   }
   .title_asp {
-    font-size: 22px;
+    font-size: 24px;
   }
   .title_adm {
     font-size: 10px;
