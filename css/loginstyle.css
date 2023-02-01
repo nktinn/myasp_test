@@ -378,7 +378,7 @@ html, body {
     background-size: 100%;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .stankin_logo {
     background-size: 100%;
   }
@@ -412,7 +412,7 @@ html, body {
     font-size: 15px;
   }
 }
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .stankin_logo {
     background-size: 100%;
   }
@@ -457,7 +457,7 @@ html, body {
     font-size: 13px;
   }
 }
-@media (max-width: 380px) {
+@media only screen and (max-width: 380px) {
   .stankin_logo {
     background-size: 100%;
   }
@@ -468,10 +468,10 @@ html, body {
     margin: 0px auto;
   }
   .title_my {
-    font-size: 28px;
+    font-size: 26px;
   }
   .title_asp {
-    font-size: 28px;
+    font-size: 26px;
   }
   .title_adm {
     font-size: 12px;
@@ -502,7 +502,7 @@ html, body {
     font-size: 12px;
   }
 }
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .stankin_logo {
     background-size: 100%;
   }
@@ -513,10 +513,10 @@ html, body {
     margin: 0px auto;
   }
   .title_my {
-    font-size: 24px;
+    font-size: 22px;
   }
   .title_asp {
-    font-size: 24px;
+    font-size: 22px;
   }
   .title_adm {
     font-size: 10px;
