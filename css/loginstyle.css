@@ -1,14 +1,8 @@
 @charset "UTF-8";
-/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');*/
+@import url(https://allfont.net/allfont.css?fonts=asap-bold);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@font-face {
-  font-family: "LatoWebBlack";
-  src: url("fonts/Lato-Black.eot");
-  src: url("fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Lato-Black.woff2") format("woff2"), url("fonts/Lato-Black.woff") format("woff"), url("fonts/Lato-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-}
+
+
 /*Обнуление*/
 *, *:before, *:after {
   padding: 0;
@@ -20,7 +14,6 @@
 html, body {
   height: 100%;
   max-width: 100%;
-  font-family: "Didact Gothic", sans-serif;
 }
 
 /*Preloader*/
@@ -120,8 +113,7 @@ html, body {
 }
 
 .title_my {
-  font-family: "LatoWeb", sans-serif;
-  font-weight: 900;
+  font-family: 'Asap Bold', arial;
   font-size: 52px;
   color: #1400FF;
   padding: 0;
@@ -129,8 +121,7 @@ html, body {
 }
 
 .title_asp {
-  font-family: "LatoWeb", sans-serif;
-  font-weight: 900;
+  font-family: 'Asap Bold', arial;
   font-size: 52px;
   color: #FF0000;
   margin-left: 6px;
@@ -139,8 +130,7 @@ html, body {
 
 .title_adm {
   text-align: right;
-  font-family: "LatoWeb", sans-serif;
-  font-weight: 900;
+  font-family: 'Asap Bold', arial;
   font-size: 20px;
   margin-top: -20px;
   color: #FF0000;
