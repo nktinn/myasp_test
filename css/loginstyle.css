@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 /*@font-face {
@@ -125,7 +125,7 @@ html, body {
 }
 
 .title_my {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 700;
   font-size: 52px;
   color: #1400FF;
@@ -134,7 +134,7 @@ html, body {
 }
 
 .title_asp {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 700;
   font-size: 52px;
   color: #FF0000;
@@ -144,7 +144,7 @@ html, body {
 
 .title_adm {
   text-align: right;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 700;
   font-size: 20px;
   margin-top: -20px;
