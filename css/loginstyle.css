@@ -125,7 +125,6 @@ html, body {
 }
 
 .title_my {
-  width: 100%;
   font-family: 'LatoWebBlack', sans-serif;
   font-size: 52px;
   font-weight: 900;
@@ -136,7 +135,6 @@ html, body {
 }
 
 .title_asp {
-  width: 100%;
   margin-left: 6px;
   font-family: 'LatoWebBlack', sans-serif;
   font-size: 52px;
