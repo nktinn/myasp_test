@@ -123,6 +123,7 @@ html, body {
   font-family: 'Asap', sans-serif;
   /* font-size: 42px; */
   display: flex;
+    justify-content: space-around;
   font-size: calc(1em + 4vw);
 }
 
@@ -140,7 +141,6 @@ html, body {
   font-weight: 900;
   color: #FF0000;
   padding: 0;
-  justify-content: flex-end;
 }
 
 .title_adm {
