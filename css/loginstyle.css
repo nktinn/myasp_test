@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
+@font-face {
+  font-family: "LatoWebBlack";
+  src: url("../fonts/Lato-Black.eot");
+  src: url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}
+
 /*Обнуление*/
 *, *:before, *:after {
   padding: 0;
@@ -111,14 +120,10 @@ html, body {
   margin: 0px auto;
 }
 
-.title_my_asp {
-  font-family: 'Asap', sans-serif;
-  font-size: 52px;
-}
-
 .title_my {
   width: 100%;
   font-family: 'Asap', sans-serif;
+  font-size: 52px;
   font-weight: 900;
   color: #1400FF;
   padding: 0;
@@ -130,6 +135,7 @@ html, body {
   width: 100%;
   margin-left: 6px;
   font-family: 'Asap', sans-serif;
+  font-size: 52px;
   font-weight: 900;
   color: #FF0000;
   padding: 0;
