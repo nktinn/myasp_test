@@ -13,7 +13,6 @@
 html, body {
   height: 100%;
   max-width: 100%;
-  font-family: "Didact Gothic", sans-serif;
 }
 
 /*Preloader*/
@@ -114,9 +113,7 @@ html, body {
 
 .title_my_asp {
   font-family: 'Asap', sans-serif;
-  /* font-size: 42px; */
-  display: flex;
-  justify-content: space-around;
+  font-size: 52px;
 }
 
 .title_my {
@@ -131,6 +128,7 @@ html, body {
 
 .title_asp {
   width: 100%;
+  margin-left: 6px;
   font-family: 'Asap', sans-serif;
   font-weight: 900;
   color: #FF0000;
@@ -141,6 +139,7 @@ html, body {
 .title_adm {
   text-align: right;
   font-family: 'Asap', sans-serif;
+  font-size: 28px;
   font-weight: 900;
   margin-top: -20px;
   color: #FF0000;
