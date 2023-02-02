@@ -120,9 +120,13 @@ html, body {
   margin: 0px auto;
 }
 
+.title_my_asp{
+  display: flex;
+}
+
 .title_my {
   width: 100%;
-  font-family: 'Asap', sans-serif;
+  font-family: 'LatoWebBlack', sans-serif;
   font-size: 52px;
   font-weight: 900;
   color: #1400FF;
@@ -134,7 +138,7 @@ html, body {
 .title_asp {
   width: 100%;
   margin-left: 6px;
-  font-family: 'Asap', sans-serif;
+  font-family: 'LatoWebBlack', sans-serif;
   font-size: 52px;
   font-weight: 900;
   color: #FF0000;
@@ -144,7 +148,7 @@ html, body {
 
 .title_adm {
   text-align: right;
-  font-family: 'Asap', sans-serif;
+  font-family: 'LatoWebBlack', sans-serif;
   font-size: 28px;
   font-weight: 900;
   margin-top: -20px;
