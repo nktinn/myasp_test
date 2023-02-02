@@ -133,6 +133,7 @@ html, body {
   color: #1400FF;
   padding: 0;
   margin: 0;
+  display:inline-block;
 }
 
 .title_asp {
@@ -141,6 +142,7 @@ html, body {
   font-weight: 900;
   color: #FF0000;
   padding: 0;
+  display:inline-block;
 }
 
 .title_adm {
