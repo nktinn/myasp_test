@@ -517,6 +517,7 @@ html, body {
   }
 }
 @media (max-width: 320px) {
+  transform: scale(2);
   .stankin_logo {
     background-size: 100%;
   }
