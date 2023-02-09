@@ -294,7 +294,6 @@ html, body {
 .buttons {
   display: block;
   padding-bottom: 40px;
-  align-self: center;
 }
 
 .btn_style {
