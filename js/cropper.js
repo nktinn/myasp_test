@@ -2276,8 +2276,7 @@
           } else {
             check(ACTION_SOUTH);
             check(ACTION_WEST);
-
-            console.log(left);console.log("bot"+bottom);
+            
             if (range.x <= 0) {
               if (left > minLeft && bottom < maxHeight) {
                 width -= range.x;
