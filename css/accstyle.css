@@ -180,6 +180,14 @@ html, body {
   z-index: 3;
 }
 
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 .detail__body {
   cursor: pointer;
   list-style: none;
