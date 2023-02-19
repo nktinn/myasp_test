@@ -265,64 +265,75 @@ summary {
 
 .content_text{
 	width: 100%;
-	margin: auto;
+}
+
+.content_document{
 	display: flex;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.document_img{
+	display: block;
+	margin: auto 0;
+	height: 50px;
+}
+
+.disp{
+    display: none;
+}
+
+.document_download{
+	display: none;
+}
+
+.document_date{
+	display: block;
+	width: 100%;
+	color: rgb(234, 234, 234);
+	margin: auto 0;
+	overflow: hidden;
+	font-size: 30px;
+}
+.document_date:after{
+	content:'';
+	display: block;
+	box-sizing:border-box;
+	width: 100%;
+	height:2px;
+	background:rgb(234, 234, 234);
+	border-width:0 .5em 0;
+}
+
+.document_text{
+	width: 100%;
+	height: auto;
+	display: flex;
+	font-size: 20px;
 	justify-content: space-between;
 }
 
-.personal{
-	display: flex;
-	width: 100%;
+.document_name{
+	padding: 0px 20px;
+	margin: auto 0;
 }
 
-.personal_display{
-	margin: auto;
-	margin-left: 10%;
-	font-family: 'Roboto', sans-serif;
-	max-width: 50%;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 27px;
-}
-
-.personal_photo{
-	height: 280px;
-	background-color: #F9F9F9;
-}
-
-.personal_science{
-	max-width: 100%;
-	margin-top: 30px;
-}
-
-.personal_contacts{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 23px;
-	margin: auto;
-	margin-top: 5%;
-	text-align: center;
-}
-
-.buttons{
-	display: block;
-	padding-bottom: 40px;
-	align-self: center;
+.document_disp{
+    display: flex;
 }
 
 .btn_style{
+	display: inline-block;
+	height: min-content;
+	margin: auto 0;
 	text-decoration: none;
 	cursor: pointer;
-	display:inline-block;
-	margin-top: 8px;
-	width: 100%;
+	width: auto;
 	color:#212529;
 	white-space: nowrap;
 	background-color:#f8f9fa;
 	border-color:#f8f9fa;
 	text-align:center;
-	vertical-align:middle;
 	-webkit-user-select:none;
 	-moz-user-select:none;
 	-ms-user-select:none;
@@ -330,7 +341,7 @@ summary {
 	border:2px solid transparent;
 	padding:.375rem 2rem;
 	font-size:1rem;
-	line-height:1.5;
+	line-height: 1.2rem;
 	border-radius:.25rem;
 	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
@@ -347,106 +358,6 @@ summary {
 
 
 
-//Popups
-
-.popup{
-	color: white;
-	z-index: 100;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.9);
-	top: 0;
-	left: 0;
-	opacity: 0;
-	visibility: hidden;
-	overflow-y: auto;
-	overflow-x: hidden;
-	transition: all 0.6s ease 0s;
-}
-
-.popup:target{
-	opacity: 1;
-	visibility: visible;
-}
-.popup:target .popup_content{
-	transform: translate(0px, 0px);
-	opacity: 1;
-}
-
-
-.popup_area{
-	cursor: default;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
-
-.popup_body{
-	max-height: 100%;
-	height: auto;
-	width: auto;
-	display: flex;
-	justify-content: center;
-	padding: 30px 10px;
-}
-
-.popup_content{
-	background-color: #fff;
-	color: #000;
-	max-height: 100%;
-	height: auto;
-	padding: 30px;
-	position: relative;
-	transition: all 0.6s ease 0s;
-	opacity: 0;
-	transform: translate(0px, -100%);
-}
-
-.popup_close{
-	position: absolute;
-	color: #000;
-	text-decoration: none;
-	right: 10px;
-	top: 10px;
-	font-size: 20px;
-}
-
-
-.popup_title{
-	padding: 10px;
-	font-size: 30px;
-	margin-top: 0.1em;
-	margin-bottom: 1em;
-}
-
-.popup_text{
-	height: 100%;
-}
-
-.popup_buttons{
-	height: 100%;
-	max-width: 400px;
-}
-
-.popup_input{
-	padding-left: 10px;
-	padding-right: 10px;
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 30px;
-	color: black;
-	background: #f8f9fa;
-	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-	border-radius: 6px;
-	outline: none;
-	min-height: 38px;
-	width: 100%;
-	margin-bottom: 15px;
-}
 
 
 /*Adaptive*/
@@ -454,19 +365,11 @@ summary {
 	.content{
 		width: 70%;
 	}
-
-	.personal_photo{
-		height: 240px;
-	}
 }
 
 @media (max-width: 1700px){
 	.content{
 		width: 75%;
-	}
-
-	.personal_photo{
-		height: 240px;
 	}
 }
 
@@ -475,24 +378,12 @@ summary {
 		width: 80%;
 		padding-top: 130px;
 	}
-
-	.personal_photo{
-		height: 240px;
-	}
-
-	.popup_input {
-	  font-size: 19px;
-	}
 }
 
 @media (max-width: 1200px){
 	.content{
 		width: 90%;
 		padding-top: 130px;
-	}
-
-	.personal_photo{
-		height: 240px;
 	}
 }
 
@@ -528,74 +419,19 @@ summary {
 		max-width: 100%;
 	}
 
-	.personal{
-		display: block;
-		width: 100%;
-		margin: auto;
-	}
-	
-	.personal_photo{
-		height: 180px;
-		max-width: 100%;
-	}
-
-	.personal_photo{
-		display: block;
-		height: 240px;
-		margin: auto;
-	}
-
-	.personal_display{
-		display: block;
-		font-size: 22px;
-		line-height: 30px;
-		max-width: 90%;
-		text-align: center;
-		margin: auto;
-	}
-
-	.personal_info{
-		display: block;
-		margin: auto;
-		margin-top: 20px;
-	}
-
-	.personal_science{
-		display: block;
-		margin: auto;
-		margin-top: 20px;
-	}
-
-	.personal_contacts{
-		max-width: 100%;
-		width: 90%;
-		font-size: 18px;
-		margin: 20px auto 0px auto;
-	}
-
-	.buttons{
-		display: block;
-		margin: 30px auto 0px auto;
-		width: 60%;
-	}
-
 	.btn_style{
 		margin-right: 20px;
 	}
-
-	.popup_content{
-	   padding: 15px;
-   }
-
-	.popup_title{
-	   font-size:35px;
-   }
 }
 
 @media (max-width: 900px){
 	.container{
 		padding: 0px 50px;
 	}
+
+    .document_disp{ 
+        margin-bottom: 10px;
+    }
 
 	.header__name_my{
 		font-size: 28px;
@@ -612,18 +448,36 @@ summary {
 	.detail__summary_img{
 		height: 60px;
 	}
-	
-	.personal_photo{
-		height: 220px;
+
+	.content_document{
+		display: block;
 	}
 
-	.popup_content{
-	   padding: 15px;
-   }
+	.document_name{
+		margin: 10px 5px;
+		padding-left: 0;
+	}
 
-	.popup_title{
-	   font-size:35px;
-   }
+	.document_text{
+		display: block;
+	}
+
+	.document_date{
+		font-size: 25px;
+	}
+	
+	.document_img{
+		height: 35px;
+        display: none;
+	}
+
+    .disp{
+        display: flex;
+    }
+
+	.document_text{
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 767px){
@@ -672,10 +526,6 @@ summary {
 		width: 90%;
 		padding-top: 120px;
 	}
-	
-	.personal_photo{
-		height: 200px;
-	}
 
 	.caret{
 		border-top: 7px dashed;
@@ -689,18 +539,17 @@ summary {
    		border-bottom: 7px solid black;
  	}
 
-	 .popup_content{
-		padding: 10px;
-	}
-
-	 .popup_title{
-		font-size:30px;
-		padding-top: 20px;
-	}
-
-	.popup_input {
-	  font-size: 16px;
-	}
+	 .document_date{
+		 font-size: 20px;
+	 }
+	 
+	 .document_img{
+		 height: 35px;
+	 }
+ 
+	 .document_text{
+		 font-size: 16px;
+	 }
 }
 
 @media (max-width: 510px){
@@ -737,24 +586,9 @@ summary {
 		padding-top: 80px;
 	}
 
-	.personal_display{
-		font-size: 20px;
-	}
-
-	.personal_contacts{
-		font-size: 16px;
-	}
-	
-	.personal_photo{
-		height: 180px;
-	}
-
-	.buttons{
-		width: 90%;
-	}
-
 	.btn_style{
-		margin-bottom: 8px;
+		width: 50%;
+		font-size: 0.9rem;
 	}
 
 	.caret{
@@ -770,20 +604,21 @@ summary {
    		border-bottom: 5px solid black;
  	}
 
-	 .popup_content{
-		padding: 5px;
-	}
+	 .content_text{
+		 width: 100%;
+	 }
 
-	 .popup_title{
-		font-size:30px;
-		padding-top: 20px;
-	}
-
-	.popup_input {
-		min-height: 35px;
-		margin-bottom: 12px;
-		font-size: 16px;
-	}
+	 .document_date{
+		 font-size: 17px;
+	 }
+	 
+	 .document_img{
+		 height: 30px;
+	 }
+ 
+	 .document_text{
+		 font-size: 15px;
+	 }
 }
 
 @media (max-width: 320px){
@@ -812,24 +647,9 @@ summary {
 		font-size: 14px;
 	}
 
-	.personal_display{
-		font-size: 18px;
-	}
-
-	.personal_contacts{
-		font-size: 14px;
-	}
-	
-	.personal_photo{
-		height: 150px;
-	}
-
 	.btn_style{
-		font-size:0.8rem;
-	}
-
-	.buttons{
 		width: 100%;
+		font-size:0.8rem;
 	}
 
 	.caret{
@@ -845,18 +665,19 @@ summary {
    		border-bottom: 4px solid black;
  	}
 
-	.popup_content{
-		padding: 5px;
+	.content_text{
+		width: 100%;
 	}
 
-	 .popup_title{
-		font-size: 20px;
-		padding-top: 20px;
+	.document_date{
+		font-size: 15px;
+	}
+	
+	.document_img{
+		height: 30px;
 	}
 
-	.popup_input {
-		min-height: 37px;
-		margin-bottom: 9px;
+	.document_text{
 		font-size: 14px;
 	}
 }

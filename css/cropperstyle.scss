@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+
+.photocontainer{
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(160, 159, 159, 0.229);
+    max-height: 100%;
+    word-wrap: normal;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 10px;
+}
+/* image area and preview */
+.image-container{
+    padding: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.239);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.239);
+}
+.image-workspace{
+    max-height: 500px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+}
+.image-workspace img{
+    align-self: center;
+    display: block;
+}
+.image-span{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.photocontainer img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.preview-cover{
+    overflow: hidden;
+}
+.preview-container span{
+    top: 66px;
+    left: 70px;
+}
+/* action button */
+.action-button{
+    display: block;
+    max-width: 90%;
+    width: auto;
+    margin: 0px auto;
+    padding: 0;
+}
+
+ .upload,.delete,.submit{
+    opacity: 1;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 8px;
+	width: 100%;
+	color:#212529;
+	background-color:#f8f9fa;
+	border-color:#f8f9fa;
+	text-align:center;
+    vertical-align: middle;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	border:3px solid transparent;
+	padding:.375rem 2rem;
+	line-height:1.5;
+	font-size:0.9rem;
+	border-radius:.25rem;
+    transition: all 0.4s ease-in-out;
+}
+.upload:hover{
+	color:#212529;
+	background-color:#e2e6ea;
+	border-color:#dae0e5;
+}
+.delete:hover{
+	color:#212529;
+	background-color:#f4433690;
+	border-color:#f443364f;
+}
+.submit:hover{
+	color:#212529;
+	background-color:#4CAF5090;
+	border-color:#4caf504f;
+}
+
+.hidden-upload{
+    display: none;
+}
+.upload.focus,.upload:focus{
+	color:#212529;
+	background-color:#f8f9fa;
+	border-color:#dae0e5;
+}
+.delete.focus,.delete:focus{
+	color:#212529;
+	background-color:#f8f9fa;
+	border-color:#f443364f;
+}
+.submit.focus,.submit:focus{
+	color:#212529;
+	background-color:#f8f9fa;
+	border-color:#4caf504f;
+}
+
+@media (max-height: 850px)
+{
+    .image-workspace{
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 400px){
+
+}

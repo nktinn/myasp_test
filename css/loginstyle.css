@@ -34,7 +34,6 @@ html, body {
   margin-top: -35px;
   margin-left: -35px;
   text-align: center;
-  -webkit-animation: preloader-rotate 1s infinite linear;
   animation: preloader-rotate 1s infinite linear;
 }
 
@@ -46,33 +45,17 @@ html, body {
   border-radius: 100%;
   width: 35px;
   height: 35px;
-  -webkit-animation: preloader-bounce 2s infinite ease-in-out;
   animation: preloader-bounce 2s infinite ease-in-out;
 }
 
 .preloader__item:last-child {
   top: auto;
   bottom: 0;
-  -webkit-animation-delay: -1s;
   animation-delay: -1s;
-}
-
-@-webkit-keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 @keyframes preloader-rotate {
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes preloader-bounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
   }
 }
 @keyframes preloader-bounce {
@@ -228,7 +211,6 @@ html, body {
   line-height: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   pointer-events: none;
   position: absolute;
@@ -332,23 +314,10 @@ html, body {
   left: calc(100% + 5px);
   transform: translate(0.5em, -50%);
 }
-
-@-webkit-keyframes tooltips-vert {
-  to {
-    opacity: 0.9;
-    transform: translate(-50%, 0);
-  }
-}
 @keyframes tooltips-vert {
   to {
     opacity: 0.9;
     transform: translate(-50%, 0);
-  }
-}
-@-webkit-keyframes tooltips-horz {
-  to {
-    opacity: 0.9;
-    transform: translate(0, -50%);
   }
 }
 @keyframes tooltips-horz {
@@ -361,7 +330,6 @@ html, body {
 [tooltip][flow^=up]:hover::after,
 [tooltip][flow^=down]:hover::before,
 [tooltip][flow^=down]:hover::after {
-  -webkit-animation: tooltips-vert 400ms ease-out forwards;
   animation: tooltips-vert 400ms ease-out forwards;
 }
 
@@ -369,7 +337,6 @@ html, body {
 [tooltip][flow^=left]:hover::after,
 [tooltip][flow^=right]:hover::before,
 [tooltip][flow^=right]:hover::after {
-  -webkit-animation: tooltips-horz 400ms ease-out forwards;
   animation: tooltips-horz 400ms ease-out forwards;
 }
 

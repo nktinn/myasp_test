@@ -1,11 +1,12 @@
 /*!
  * Cropper.js v1.5.12
  * https://fengyuanchen.github.io/cropperjs
- *
+ * 
+ * This source code is provided By HA Codes and is allowed for personal and professional use.
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
- *
- * Date: 2021-06-12T08:00:17.411Z
+ * 
+ * Refactored by nktinn for my-asp
  */
 
 (function (global, factory) {

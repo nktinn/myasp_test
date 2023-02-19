@@ -2,11 +2,10 @@
 <html lang="ru">
 	<head>
 		<title>Новости</title>
-		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/newsstyle.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-		<script  src="../js/script.js"></script>
 		<script  src="../js/preloader.js"></script>
 	</head>
 	<body>
@@ -24,13 +23,13 @@
 				<div class="container">
 					<div class="header__body">
 						<a class="header__logo">
-							<img src="../img/logo.png" alt="logo soon...">
+							<img src="../img/logo.png">
 						</a>
-						<div>
+						<div class="header_myasp">
 							<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
 						</div>
 						<details class="detail__body" data-toggle="dropdown">
-							<summary class="detail__summary"><img class="detail__summary_img" src="../img/prof.png"><span class="caret" id="caret"></span></summary>
+							<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png"><span class="caret" id="caret"></span></summary>
 						<nav class="header__menu">
 							<ul class="header__list">
 								<li>
@@ -66,11 +65,54 @@
 			<div class="content">
 				<div class="container">
 					<div class="content_text">
-						<p>
-						</p>
+						<div class="news_list">
+							<h1>Последние новости университета</h1>
+							<!--foreach new in news-->
+							<div class="news_element top">
+								<img src="../img/logo.png">
+								<p>16.02.2023</p>
+								<p class="news_text">Актуальные списки групп и расписание на весенний семестр</p>
+								<a class="btn_style" href="https://stankin.ru/news/item_2671" target="_blank" rel="noopener noreferrer">Подробнее</a>
+							</div>
+							<div class="news_element top mid">
+								<img src="../img/logo.png">
+								<p>6.2.2023</p>
+								<p class="news_text">Информация для аспирантов, обучающихся на приоритетных направлениях</p>
+								<a class="btn_style" href="https://stankin.ru/news/item_2647" target="_blank" rel="noopener noreferrer">Подробнее</a>
+							</div>
+							<div class="news_element top end">
+								<img src="../img/logo.png">
+								<p>26.1.2023</p>
+								<p class="news_text">Новость для аспирантов, получающих стипендию</p>
+								<a class="btn_style" href="https://stankin.ru/news/item_2241" target="_blank" rel="noopener noreferrer">Подробнее</a>
+							</div>
+							<br>
+							<div class="news_element mid">
+								<img src="../img/logo.png">
+								<p>8.12.2022</p>
+								<p class="news_text">Информация для аспирантов 4 курса</p>
+								<a class="btn_style" href="https://stankin.ru/news/item_2582" target="_blank" rel="noopener noreferrer">Подробнее</a>
+							</div>
+							<div class="news_element">
+								<img src="../img/logo.png">
+								<p>25.11.2022</p>
+								<p class="news_text">Сроки сдачи отчетов по практикам</p>
+								<a class="btn_style" href="https://stankin.ru/news/item_2145" target="_blank" rel="noopener noreferrer">Подробнее</a>
+							</div>
+							<div class="news_element mid end">
+								<img src="../img/logo.png">
+								<p>24.11.2022</p>
+								<p class="news_text">Информация для аспирантов (иностранных граждан)</p>
+								<a class="btn_style" href="https://stankin.ru/news/item_2189" target="_blank" rel="noopener noreferrer">Подробнее</a>
+							</div>
+						</div>
+						<a class="btn_style" href="https://stankin.ru/pages/id_79/news_1" target="_blank" rel="noopener noreferrer">Все новости</a>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<script  src="../js/script.js"></script>
+
 	</body>
 </html>
