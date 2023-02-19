@@ -783,6 +783,12 @@ summary::-webkit-details-marker {
   .submit {
     font-size: 0.9rem;
   }
+  .popup_content {
+    max-width: 90%;
+  }
+  .drop_header {
+    max-width: 95%;
+  }
   .popup_input {
     font-size: 1rem;
   }
