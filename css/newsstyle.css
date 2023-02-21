@@ -346,8 +346,6 @@ summary::-webkit-details-marker {
   margin: 20px auto;
 }
 
-
-
 /*Adaptive*/
 @media (max-width: 1900px) {
   .content {

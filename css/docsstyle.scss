@@ -279,10 +279,6 @@ summary {
 	height: 50px;
 }
 
-.disp{
-    display: none;
-}
-
 .document_download{
 	display: none;
 }
@@ -460,6 +456,13 @@ summary {
 
 	.document_text{
 		display: block;
+		font-size: 18px;
+	}
+
+	.btn_style{
+		display: block;
+		margin: 0 auto;
+		width: min-content;
 	}
 
 	.document_date{
@@ -468,15 +471,6 @@ summary {
 	
 	.document_img{
 		height: 35px;
-        display: none;
-	}
-
-    .disp{
-        display: flex;
-    }
-
-	.document_text{
-		font-size: 18px;
 	}
 }
 
@@ -587,7 +581,6 @@ summary {
 	}
 
 	.btn_style{
-		width: 50%;
 		font-size: 0.9rem;
 	}
 
@@ -606,6 +599,7 @@ summary {
 
 	 .content_text{
 		 width: 100%;
+		 font-size: 15px;
 	 }
 
 	 .document_date{
@@ -614,10 +608,6 @@ summary {
 	 
 	 .document_img{
 		 height: 30px;
-	 }
- 
-	 .document_text{
-		 font-size: 15px;
 	 }
 }
 
@@ -648,7 +638,6 @@ summary {
 	}
 
 	.btn_style{
-		width: 100%;
 		font-size:0.8rem;
 	}
 
@@ -667,6 +656,7 @@ summary {
 
 	.content_text{
 		width: 100%;
+		font-size: 14px;
 	}
 
 	.document_date{
@@ -675,9 +665,5 @@ summary {
 	
 	.document_img{
 		height: 30px;
-	}
-
-	.document_text{
-		font-size: 14px;
 	}
 }
