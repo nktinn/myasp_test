@@ -438,14 +438,15 @@ summary {
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 30px;
-	color: black;
-	background: #f8f9fa;
+	color: grey;
+	background: white;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 	border-radius: 6px;
 	outline: none;
 	min-height: 38px;
 	width: 100%;
 	margin-bottom: 15px;
+	appearance: none;
 }
 
 
