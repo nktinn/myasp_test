@@ -367,6 +367,7 @@ summary::-webkit-details-marker {
 }
 
 .popup_content {
+  border-radius: 4px;
   background-color: #fff;
   color: #000;
   max-height: 100%;
