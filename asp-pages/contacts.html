@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Контакты</title>
-		<link rel="stylesheet" href="../css/style.css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-		<script  src="../js/preloader.js"></script>
-	</head>
-	<body>
 
-		<div class="preloader">
-    		<div class="preloader__row">
-      			<div class="preloader__item"></div>
-      			<div class="preloader__item"></div>
-    		</div>
-  		</div>
+<head>
+	<title>Контакты</title>
+	<link rel="stylesheet" href="../css/contstyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="../js/preloader.js"></script>
+</head>
 
-		
-		<div class="wrapper">
-			<header class="header">
-				<div class="container">
-					<div class="header__body">
-						<a class="header__logo">
-							<img src="../img/logo.png" alt="logo soon...">
-						</a>
-						<div>
-							<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
-						</div>
-						<details class="detail__body" data-toggle="dropdown">
-							<summary class="detail__summary"><img class="detail__summary_img" src="../img/prof.png"><span class="caret" id="caret"></span></summary>
+<body>
+
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a class="header__logo">
+						<img src="../img/logo.png" alt="logo soon...">
+					</a>
+					<div>
+						<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
+					</div>
+					<details class="detail__body" data-toggle="dropdown">
+						<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png">
+						</summary>
 						<nav class="header__menu">
 							<ul class="header__list">
 								<li>
@@ -58,21 +61,65 @@
 								</li>
 							</ul>
 						</nav>
-						</details>
-					</div>
+					</details>
 				</div>
-			</header>
-			<div class="content">
-				<div class="container">
-					<div class="content_text">
-						<p>
-						</p>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="content_text">
+					<div class="employee_all cap">
+						<h1>Директор Центра</h1>
+						<div class="employee cap">
+							<img class="employee_img" src="../img/alt.png">
+							<p style="text-align: center;">КАПИТАНОВ АЛЕКСЕЙ ВЯЧЕСЛАВОВИЧ</p>
+							<p style="text-align: center;">Телефон: +7(499) 973-39-07</p>
+						</div>
+					</div>
+					<div class="employee_all">
+						<h1>Сотрудники</h1>
+						<!--foreach admin in database-->
+						<div class="emp_body">
+							<div class="employee">
+								<img class="employee_img" src="../img/alt.png">
+								<div class="flex_info">
+									<p>РОЖКОВА ОКСАНА АЛЕКСАНДРОВНА</p>
+									<p>Телефон :+7(499) 973-39-07, 4-25</p>
+									<p>Эл. почта: o.rozhkova@stankin.ru</p>
+									<p>Кабинет: 219</p>
+								</div>
+							</div>
+						</div>
+						<div class="emp_body">
+							<div class="employee">
+								<div class="flex_info">
+									<p>НЕВМЕРЖИЦКАЯ ЯНА СЕРГЕЕВНА</p>
+									<p>Телефон :+7(499) 973-39-07, 4-25</p>
+									<p>Эл. почта: Ya.Nevmerzhitskaya@stankin.ru</p>
+									<p>Кабинет: 219</p>
+								</div>
+								<img class="employee_img" src="../img/alt.png">
+							</div>
+						</div>
+						<div class="emp_body">
+							<div class="employee">
+								<img class="employee_img" src="../img/alt.png">
+								<div class="flex_info">
+									<p>ЯКОВЛЕВА МАРИЯ АНДРЕЕВНА</p>
+									<p>Телефон :+7(499) 973-39-07, 4-25</p>
+									<p>Эл. почта: M.Yakovleva@stankin.ru</p>
+									<p>Кабинет: 219</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<script  src="../js/script.js"></script>
-		
-	</body>
+	</div>
+
+	<script src="../js/script.js"></script>
+
+</body>
+
 </html>

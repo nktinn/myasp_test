@@ -6,14 +6,11 @@ var actionButton = document.getElementsByClassName('upload');
 document.onclick=function(cl){
     
 	var f = document.querySelector("details");
-	var element = document.getElementById("caret");
-    if (!cl.target.classList.contains("detail__body") && !cl.target.classList.contains("detail__summary") && !cl.target.classList.contains("detail__summary_img") && !cl.target.classList.contains("caret")) {
+    if (!cl.target.classList.contains("detail__body") && !cl.target.classList.contains("detail__summary") && !cl.target.classList.contains("detail__summary_img")) {
 			if (f.open == true) {
 				f.open = false;
- 				element.classList.toggle("caret-up");
         	}
     	}
-    else element.classList.toggle("caret-up");	
     var eventer = document.getElementsByClassName(cl.target.className);
     if (eventer == actionButton)
     {

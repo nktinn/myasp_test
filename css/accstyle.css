@@ -77,22 +77,21 @@ html, body {
 }
 
 /*Header details triangle*/
-.caret {
-  display: inline-block;
+summary::after {
+  content: "";
   width: 0;
   height: 0;
   position: absolute;
   top: 50%;
   margin-left: 5px;
-  vertical-align: middle;
   border-top: 8px dashed;
   border-top: 8px solid\9 ;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
 
-.caret-up {
-  border-top-width: 0;
+details[open] summary::after {
+  border-top: 0;
   border-bottom: 8px solid black;
 }
 
@@ -173,11 +172,13 @@ summary::-webkit-details-marker {
 }
 
 .detail__body {
+  width: 140px;
   cursor: pointer;
 }
 
 .detail__summary {
   cursor: pointer;
+  text-align: center;
 }
 
 .detail__summary_img {
@@ -224,7 +225,7 @@ summary::-webkit-details-marker {
   height: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 40px;
   text-align: left;
   color: #545454;
@@ -323,6 +324,8 @@ summary::-webkit-details-marker {
 }
 
 .popup {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: white;
   z-index: 100;
   position: fixed;
@@ -401,19 +404,19 @@ summary::-webkit-details-marker {
 
 .popup_buttons {
   height: 100%;
+  padding: 0 10px;
   max-width: 400px;
 }
 
 .popup_input {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
   color: grey;
   background: white;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   outline: none;
   min-height: 38px;
@@ -422,6 +425,65 @@ summary::-webkit-details-marker {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.upload, .delete, .submit {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 8px;
+  width: 100%;
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 3px solid transparent;
+  padding: 0.375rem 2rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.upload:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+.delete:hover {
+  color: #212529;
+  background-color: rgba(244, 67, 54, 0.5647058824);
+  border-color: rgba(244, 67, 54, 0.3098039216);
+}
+
+.submit:hover {
+  color: #212529;
+  background-color: rgba(76, 175, 80, 0.5647058824);
+  border-color: rgba(76, 175, 80, 0.3098039216);
+}
+
+.upload.focus, .upload:focus {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #dae0e5;
+}
+
+.delete.focus, .delete:focus {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: rgba(244, 67, 54, 0.3098039216);
+}
+
+.submit.focus, .submit:focus {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: rgba(76, 175, 80, 0.3098039216);
 }
 
 /*Adaptive*/
@@ -474,6 +536,9 @@ summary::-webkit-details-marker {
   }
   .header__logo img {
     height: 80px;
+  }
+  .detail__body {
+    width: 110px;
   }
   .detail__summary_img {
     height: 60px;
@@ -537,7 +602,7 @@ summary::-webkit-details-marker {
     padding: 15px;
   }
   .popup_title {
-    font-size: 35px;
+    font-size: 26px;
   }
 }
 @media (max-width: 900px) {
@@ -552,6 +617,12 @@ summary::-webkit-details-marker {
   }
   .header__logo img {
     height: 70px;
+  }
+  .header__link {
+    font-size: 18px;
+  }
+  .detail__body {
+    width: 100px;
   }
   .detail__summary_img {
     height: 60px;
@@ -579,6 +650,9 @@ summary::-webkit-details-marker {
   .header__logo img {
     height: 60px;
   }
+  .detail__body {
+    width: 85px;
+  }
   .detail__summary_img {
     height: 50px;
   }
@@ -589,7 +663,6 @@ summary::-webkit-details-marker {
   }
   .header__menu {
     position: fixed;
-    top: 49px;
     font-size: 25px;
     max-width: 90%;
     width: auto;
@@ -607,14 +680,14 @@ summary::-webkit-details-marker {
   .personal_photo {
     height: 200px;
   }
-  .caret {
+  summary::after {
     border-top: 7px dashed;
     border-top: 7px solid\9 ;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
   }
-  .caret-up {
-    border-top-width: 0;
+  details[open] summary::after {
+    border-top: 0;
     border-bottom: 7px solid black;
   }
   .popup_content {
@@ -628,7 +701,7 @@ summary::-webkit-details-marker {
     font-size: 16px;
   }
 }
-@media (max-width: 510px) {
+@media (max-width: 540px) {
   .container {
     padding: 0 10px;
     max-width: 95%;
@@ -645,8 +718,14 @@ summary::-webkit-details-marker {
   .header__logo img {
     height: 40px;
   }
+  .detail__body {
+    width: 57px;
+  }
   .detail__summary_img {
     height: 35px;
+  }
+  .header__menu {
+    top: 49px;
   }
   .header__link {
     font-size: 16px;
@@ -669,22 +748,21 @@ summary::-webkit-details-marker {
   .btn_style {
     margin-bottom: 8px;
   }
-  .caret {
-    margin-left: -5px;
+  summary::after {
     border-top: 5px dashed;
     border-top: 5px solid\9 ;
     border-right: 3px solid transparent;
     border-left: 3px solid transparent;
   }
-  .caret-up {
-    border-top-width: 0;
+  details[open] summary::after {
+    border-top: 0;
     border-bottom: 5px solid black;
   }
   .popup_content {
     padding: 5px;
   }
   .popup_title {
-    font-size: 30px;
+    font-size: 24px;
     padding-top: 20px;
   }
   .popup_input {
@@ -693,7 +771,7 @@ summary::-webkit-details-marker {
     font-size: 16px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 335px) {
   .container {
     padding: 0px 2px;
     max-width: 95%;
@@ -706,6 +784,9 @@ summary::-webkit-details-marker {
   }
   .header__logo img {
     height: 30px;
+  }
+  .detail__body {
+    width: 43px;
   }
   .detail__summary_img {
     height: 30px;
@@ -728,15 +809,14 @@ summary::-webkit-details-marker {
   .buttons {
     width: 100%;
   }
-  .caret {
-    margin-left: -5px;
+  summary::after {
     border-top: 4px dashed;
     border-top: 4px solid\9 ;
     border-right: 2px solid transparent;
     border-left: 2px solid transparent;
   }
-  .caret-up {
-    border-top-width: 0;
+  details[open] summary::after {
+    border-top: 0;
     border-bottom: 4px solid black;
   }
   .popup_content {
