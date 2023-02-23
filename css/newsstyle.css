@@ -570,7 +570,7 @@ summary::-webkit-details-marker {
 }
 @media (max-width: 335px) {
   .container {
-    padding: 0px 2px;
+    padding: 0px 7px;
     max-width: 100%;
   }
   .header__name_my {
