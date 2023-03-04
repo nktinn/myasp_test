@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Моя  успеваемость</title>
-		<link rel="stylesheet" href="../css/edustyle.css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-		<script  src="../js/preloader.js"></script>
-	</head>
-	<body>
 
-		<div class="preloader">
-    		<div class="preloader__row">
-      			<div class="preloader__item"></div>
-      			<div class="preloader__item"></div>
-    		</div>
-  		</div>
+<head>
+	<title>Моя успеваемость</title>
+	<link rel="stylesheet" href="../css/edustyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="../js/preloader.js"></script>
+</head>
 
-		
-		<div class="wrapper">
-			<header class="header">
-				<div class="container">
-					<div class="header__body">
-						<a class="header__logo">
-							<img src="../img/logo.png" alt="logo soon...">
-						</a>
-						<div>
-							<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
-						</div>
-						<details class="detail__body" data-toggle="dropdown">
-							<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png"></summary>
+<body>
+
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a class="header__logo">
+						<img src="../img/logo.png" alt="logo soon...">
+					</a>
+					<div>
+						<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
+					</div>
+					<details class="detail__body" data-toggle="dropdown">
+						<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png">
+						</summary>
 						<nav class="header__menu">
 							<ul class="header__list">
 								<li>
@@ -58,21 +61,161 @@
 								</li>
 							</ul>
 						</nav>
-						</details>
-					</div>
+					</details>
 				</div>
-			</header>
-			<div class="content">
-				<div class="container">
-					<div class="content_text">
-						<p>
-						</p>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="content_text">
+					<div class="results">
+						<div class="res_head">Результаты сессии</div>
+						<div class="subject main">
+							<div class="subject_name">
+								Предмет
+							</div>
+							<div class="subject_rating">
+								Оценка
+							</div>
+						</div>
+						<!--foreach subject in DB-->
+						<div class="subject">
+							<div class="subject_name">
+								Математика
+							</div>
+							<div class="subject_rating">
+								54
+							</div>
+						</div>
+						<div class="subject">
+							<div class="subject_name">
+								Программирование
+							</div>
+							<div class="subject_rating">
+								25
+							</div>
+						</div>
+						<div class="subject">
+							<div class="subject_name">
+								Физ. культура
+							</div>
+							<div class="subject_rating red">
+								Неуд.
+							</div>
+						</div>
+					</div>
+					<!--if exam!=null-->
+					<div class="result_exam">
+						<div class="exam_head">Кандидатские экзамены</div>
+						<div class="subject_exam main">
+							<div class="subject_name">
+								Дисциплина
+							</div>
+							<div class="subject_rating">
+								Оценка
+							</div>
+						</div>
+						<div class="subject_exam">
+							<div class="subject_name exam">
+								ИВТ
+							</div>
+							<div class="subject_rating red">
+								Неуд.
+							</div>
+						</div>
+					</div>
+					<div class="stip_head">
+						Стипендии в этом месяце
+					</div>
+					<div class="stips">
+						<div class="stip_body main">
+							<div class="stip_name main">
+								Академическая стипендия
+							</div>
+							<div class="stip_amount main">
+								3600(8600) ₽
+							</div>
+							<div class="stip_is main">
+								<img class="vx" src="../img/vg.png">
+							</div>
+						</div>
+						<div class="stip_body">
+							<div class="stip_name">
+								Социальная стипендия
+							</div>
+							<div class="stip_amount">
+								3200 ₽
+							</div>
+							<div class="stip_is">
+								<img class="vx" src="../img/xr.png">
+							</div>
+						</div>
+						<div class="stip_body">
+							<div class="stip_name">
+								Им. стип. у.с. 5 степени*
+							</div>
+							<div class="stip_amount">
+								2200 ₽
+							</div>
+							<div class="stip_is">
+								<img class="vx" src="../img/xr.png">
+							</div>
+						</div>
+						<div class="stip_body">
+							<div class="stip_name">
+								Им. стип. у.с. 4 степени*
+							</div>
+							<div class="stip_amount">
+								4440 ₽
+							</div>
+							<div class="stip_is">
+								<img class="vx" src="../img/xr.png">
+							</div>
+						</div>
+						<div class="stip_body">
+							<div class="stip_name">
+								Им. стип. у.с. 3 степени*
+							</div>
+							<div class="stip_amount">
+								6660 ₽
+							</div>
+							<div class="stip_is">
+								<img class="vx" src="../img/xr.png">
+							</div>
+						</div>
+						<div class="stip_body">
+							<div class="stip_name">
+								Им. стип. у.с. 2 степени*
+							</div>
+							<div class="stip_amount">
+								8880 ₽
+							</div>
+							<div class="stip_is">
+								<img class="vx" src="../img/xr.png">
+							</div>
+						</div>
+						<div class="stip_body">
+							<div class="stip_name">
+								Им. стип. у.с. 1 степени*
+							</div>
+							<div class="stip_amount">
+								11100 ₽
+							</div>
+							<div class="stip_is">
+								<img class="vx" src="../img/xr.png">
+							</div>
+						</div>
+					</div>
+					<div class="stip_descr">
+						*Им. стип. у.с. - Именная стипендия учёного совета
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<script  src="../js/script.js"></script>
-		
-	</body>
+	</div>
+
+	<script src="../js/script.js"></script>
+
+</body>
+
 </html>

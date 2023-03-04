@@ -133,7 +133,6 @@ details[open] summary::after {
 }
 
 .header__logo {
-  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -389,6 +388,10 @@ summary::-webkit-details-marker {
   right: 10px;
   top: 10px;
   font-size: 20px;
+}
+
+.popup_close img {
+  height: 20px;
 }
 
 .popup_title {
