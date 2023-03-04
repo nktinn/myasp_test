@@ -153,7 +153,6 @@ details[open] summary::after{
 }
 
 .header__logo{
-	border-radius: 50%;
 	overflow: hidden; 
 }
 
@@ -281,6 +280,7 @@ summary {
 .news_list h1{
 	display: block;
 	word-wrap: normal;
+	hyphens: auto;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;

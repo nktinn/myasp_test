@@ -152,7 +152,6 @@ details[open] summary::after{
 }
 
 .header__logo{
-	border-radius: 50%;
 	overflow: hidden; 
 }
 
@@ -272,6 +271,7 @@ summary {
 .content_text h1{
 	font-size: 30px;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 .employee{
@@ -283,6 +283,10 @@ summary {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 26px;
+}
+
+.employee_all h1{
+	margin-bottom: 10px;
 }
 
 .emp_body::after{
@@ -324,6 +328,7 @@ summary {
 .cap{
 	margin-top: 0;
 	display: block;
+	text-align: center;
 }
 
 
@@ -594,8 +599,12 @@ summary {
 
 @media (max-width: 335px){
 	.container{
-		padding: 0px 7px;
+		padding: 0;
 		max-width: 95%;
+	}
+
+	.content_text{
+		max-width: 100%;
 	}
 
 	.header__name_my{
@@ -633,4 +642,8 @@ summary {
     	border-top: 0;
    		border-bottom: 4px solid black;
  	}
+
+	.employee{
+		padding: 10px 0;
+	}
 }

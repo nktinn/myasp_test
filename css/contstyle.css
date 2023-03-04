@@ -133,7 +133,6 @@ details[open] summary::after {
 }
 
 .header__logo {
-  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -248,6 +247,7 @@ summary::-webkit-details-marker {
 .content_text h1 {
   font-size: 30px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .employee {
@@ -259,6 +259,10 @@ summary::-webkit-details-marker {
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
+}
+
+.employee_all h1 {
+  margin-bottom: 10px;
 }
 
 .emp_body::after {
@@ -304,6 +308,7 @@ summary::-webkit-details-marker {
 .cap {
   margin-top: 0;
   display: block;
+  text-align: center;
 }
 
 /*Adaptive*/
@@ -518,8 +523,11 @@ summary::-webkit-details-marker {
 }
 @media (max-width: 335px) {
   .container {
-    padding: 0px 7px;
+    padding: 0;
     max-width: 95%;
+  }
+  .content_text {
+    max-width: 100%;
   }
   .header__name_my {
     font-size: 14px;
@@ -548,5 +556,8 @@ summary::-webkit-details-marker {
   details[open] summary::after {
     border-top: 0;
     border-bottom: 4px solid black;
+  }
+  .employee {
+    padding: 10px 0;
   }
 }/*# sourceMappingURL=contstyle.css.map */
