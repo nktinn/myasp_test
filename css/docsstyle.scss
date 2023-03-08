@@ -280,10 +280,6 @@ summary {
 	height: 50px;
 }
 
-.document_download{
-	display: none;
-}
-
 .document_date{
 	display: block;
 	width: 100%;
@@ -291,6 +287,7 @@ summary {
 	margin: auto 0;
 	overflow: hidden;
 	font-size: 30px;
+	margin-bottom: 20px;
 }
 .document_date:after{
 	content:'';
@@ -448,6 +445,7 @@ summary {
 
 	.header__link{
 		font-size: 18px;
+		line-height: 35px;
 	}
 
 	.detail__body{
@@ -598,6 +596,7 @@ summary {
 
 	.header__link{
 		font-size: 16px;
+		line-height: 33px;
 	}
 
 	.content{
@@ -662,6 +661,7 @@ summary {
 
 	.header__link{
 		font-size: 14px;
+		line-height: 31px;
 	}
 
 	.btn_style{

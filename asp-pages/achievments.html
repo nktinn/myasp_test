@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Мои достижения</title>
-		<link rel="stylesheet" href="../css/achievstyle.css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-		<script  src="../js/preloader.js"></script>
-	</head>
-	<body>
 
-		<div class="preloader">
-    		<div class="preloader__row">
-      			<div class="preloader__item"></div>
-      			<div class="preloader__item"></div>
-    		</div>
-  		</div>
+<head>
+	<title>Мои достижения</title>
+	<link rel="stylesheet" href="../css/achievstyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="../js/preloader.js"></script>
+</head>
 
-		
-		  <div class="wrapper">
-			<header class="header">
-				<div class="container">
-					<div class="header__body">
-						<a class="header__logo">
-							<img src="../img/logo.png" alt="logo soon...">
-						</a>
-						<div>
-							<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
-						</div>
-						<details class="detail__body" data-toggle="dropdown">
-							<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png"></summary>
+<body>
+
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a class="header__logo">
+						<img src="../img/logo.png" alt="logo soon...">
+					</a>
+					<div>
+						<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
+					</div>
+					<details class="detail__body" data-toggle="dropdown">
+						<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png">
+						</summary>
 						<nav class="header__menu">
 							<ul class="header__list">
 								<li>
@@ -45,7 +48,7 @@
 									<a href="../asp-pages/achievments.html" class="header__link">Достижения</a>
 								</li>
 								<li>
-									<a href="../asp-pages/timetable.html" class="header__link">Расписание экзаменов</a>
+									<a href="../asp-pages/timetable.html" class="header__link">Расписание</a>
 								</li>
 								<li>
 									<a href="../asp-pages/news.html" class="header__link">Новости</a>
@@ -58,105 +61,110 @@
 								</li>
 							</ul>
 						</nav>
-						</details>
-					</div>
+					</details>
 				</div>
-			</header>
-			<div class="content">
-				<div class="container">
-					<div class="content_text">
-						<!--foreach var doc in DataBase do-->
-						<div class="button_add">
-							<a class="btn_style" href="#filepopup">Добавить файл</a>
-						</div>
-						<div class="content_document">
-							<div class="document_text">
-								<div class="document_disp">
-									<img class="document_img" src="../img/document.png">
-									<div class="document_name">ИД Патент4 №1234/5-66 от 21.02.2022</div>
-								</div>
-								<div class="buttons">
-									<form class="form_group" onsubmit="return confirm('Достижение будет безвозвратно удалено')">
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="content_text">
+					<!--foreach var doc in DataBase do-->
+					<div class="button_add">
+						<a class="btn_style" href="#filepopup">Добавить файл</a>
+					</div>
+					<div class="content_document">
+						<div class="document_text">
+							<div class="document_disp">
+								<img class="document_img" src="../img/document.png">
+								<div class="document_name">ИД Патент4 №1234/5-66 от 21.02.2022</div>
+							</div>
+							<div class="buttons">
+								<form class="form_group"
+									onsubmit="return confirm('Достижение будет безвозвратно удалено')">
 									<button class="btn_style" href="">Удалить</button>
-									</form>
-									<a class="btn_style" href="../img/document.png" download>Скачать</a>
-								</div>
+								</form>
+								<a class="btn_style" href="../img/document.png" download>Скачать</a>
 							</div>
 						</div>
-						<div class="content_document">
-							<div class="document_text">
-								<div class="document_disp">
-									<img class="document_img" src="../img/document.png">
-									<div class="document_name">ИД Патент3 №1234/5-77 от 11.02.2022</div>
-								</div>
-								<div class="buttons">
-									<form class="form_group" onsubmit="return confirm('Достижение будет безвозвратно удалено')">
+					</div>
+					<div class="content_document">
+						<div class="document_text">
+							<div class="document_disp">
+								<img class="document_img" src="../img/document.png">
+								<div class="document_name">ИД Патент3 №1234/5-77 от 11.02.2022</div>
+							</div>
+							<div class="buttons">
+								<form class="form_group"
+									onsubmit="return confirm('Достижение будет безвозвратно удалено')">
 									<button class="btn_style" href="">Удалить</button>
-									</form>
-									<a class="btn_style" href="../img/document.png" download>Скачать</a>
-								</div>
+								</form>
+								<a class="btn_style" href="../img/document.png" download>Скачать</a>
 							</div>
 						</div>
-						<div class="content_document">
-							<div class="document_text">
-								<div class="document_disp">
-									<img class="document_img" src="../img/document.png">
-									<div class="document_name">ИД Патент2 №1234/5-88 от 01.02.2022</div>
-								</div>
-								<div class="buttons">
-									<form class="form_group" onsubmit="return confirm('Достижение будет безвозвратно удалено')">
+					</div>
+					<div class="content_document">
+						<div class="document_text">
+							<div class="document_disp">
+								<img class="document_img" src="../img/document.png">
+								<div class="document_name">ИД Патент2 №1234/5-88 от 01.02.2022</div>
+							</div>
+							<div class="buttons">
+								<form class="form_group"
+									onsubmit="return confirm('Достижение будет безвозвратно удалено')">
 									<button class="btn_style" href="">Удалить</button>
-									</form>
-									<a class="btn_style" href="../img/document.png" download>Скачать</a>
-								</div>
+								</form>
+								<a class="btn_style" href="../img/document.png" download>Скачать</a>
 							</div>
 						</div>
-						<div class="content_document">
-							<div class="document_text">
-								<div class="document_disp">
-									<img class="document_img disp" src="../img/document.png">
-									<div class="document_name">ИД Патент1 №1234/5-99 от 01.01.2022</div>
-								</div>
-								<div class="buttons">
-									<form class="form_group" onsubmit="return confirm('Достижение будет безвозвратно удалено')">
-									<button class="btn_style" href="">Удалить</button>
-									</form>
-									<a class="btn_style" href="../img/document.png" download>Скачать</a>	
-								</div>
+					</div>
+					<div class="content_document">
+						<div class="document_text">
+							<div class="document_disp">
+								<img class="document_img disp" src="../img/document.png">
+								<div class="document_name">ИД Патент1 №1234/5-99 от 01.01.2022</div>
+							</div>
+							<div class="buttons">
+								<form class="form_group"
+									onsubmit="return confirm('Достижение будет безвозвратно удалено')">
+									<button class="btn_style">Удалить</button>
+								</form>
+								<a class="btn_style" href="../img/document.png" download>Скачать</a>
 							</div>
 						</div>
-						
-						<div id="filepopup" class="popup">
-							<a href="#header" class="popup_area"></a>
-							<div class="popup_body">
-								<div class="popup_content">
+					</div>
+
+					<div id="filepopup" class="popup">
+						<a href="#header" class="popup_area"></a>
+						<div class="popup_body">
+							<div class="popup_content">
 								<a href="#header" class="popup_close"><img src="../img/x.png"></a>
+								<form class="form_group">
 									<div class="popup_title">Добавить достижения</div>
 									<div class="popup_limits">Максимум файлов: 1<br>
-									Поддерживаемые типы файлов: pdf, doc, jpeg, jpg, png</div>
+										Поддерживаемые типы файлов: pdf, doc, jpeg, jpg, png</div>
 									<div class="drop_area">
-									  <img src="../img/cloud_upload.png" class="drop_area_img"></img>
-									  <header class="drop_header">Перетащите файл</header>
-									  <span class="drop_span">или</span>
-									  <button class="btn_style">Выбрать файл</button>
-									  <input type="file" name="fileupload" id="fileupload" hidden>
+										<img src="../img/cloud_upload.png" class="drop_area_img"></img>
+										<header class="drop_header">Перетащите файл</header>
+										<span class="drop_span">или</span>
+										<button type="button" class="btn_style">Выбрать файл</button>
+										<input type="file" name="fileupload" id="fileupload" hidden>
 									</div>
 									<div class="popup_buttons">
 										<input class="popup_input" type="name" name="filename" placeholder="Введите название">
-										<form class="form_group">
-											<button class="submit" onclick="location.href='#header'">Сохранить</button>
-										</form>
+										<button class="submit" onclick="location.href='#header'">Сохранить</button>
 									</div>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<script  src="../js/fileloader.js"></script>
-		<script  src="../js/script.js"></script>
+	</div>
 
-	</body>
+	<script src="../js/fileloader.js"></script>
+	<script src="../js/script.js"></script>
+
+</body>
+
 </html>

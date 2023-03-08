@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<title>Документы аспирантов</title>
-		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/a_docsstyle.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -20,7 +20,7 @@
 							<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
 						</div>
 						<details class="detail__body" data-toggle="dropdown">
-							<summary class="detail__summary"><img class="detail__summary_img" src="../img/prof.png"><span class="caret" id="caret"></span></summary>
+							<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png"><span class="caret" id="caret"></span></summary>
 						<nav class="header__menu">
 							<ul class="header__list">
 								<li>
@@ -33,10 +33,10 @@
 									<a href="../adm-pages/docs.html" class="header__link">Документы</a>
 								</li>
 								<li>
-									<a href="../adm-pages/graduates.html" class="header__link">Стипендии</a>
+									<a href="../adm-pages/grants.html" class="header__link">Стипендии</a>
 								</li>
 								<li>
-									<a href="../adm-pages/timetable.html" class="header__link">Расписание экзаменов</a>
+									<a href="../adm-pages/timetable.html" class="header__link">Расписание</a>
 								</li>
 								<li>
 									<a href="../adm-pages/contacts.html" class="header__link">Контакты</a>
@@ -53,15 +53,148 @@
 			<div class="content">
 				<div class="container">
 					<div class="content_text">
-						<p>
-
-						</p>
+						<form class="form_group">
+							<div class="input_display">
+								<input class="input_file" type="file" id="fileUpload"><div class="input_value"></div><label class="input_label" for="fileUpload">Выбрать документ</label>
+							</div>
+							<button class="btn_style btn submit">Назначить документ</button>
+						</form>
+						<div class="search_box">
+							<div class="search_name">
+								<input class="search_input" type="text" placeholder="Введите Фамилию Имя Отчество">
+							</div>
+							<div class="search_group">
+								<select class="search_select">
+									<option disabled selected>Выберите номер группы</option>
+									<option>АСП-22-01</option>
+									<option>АСП-22-02</option>
+									<option>АСП-22-03</option>
+									<option>АСП-22-04</option>
+								</select>
+							</div>
+							<div class="search_number">
+								<input class="search_input" type="text" placeholder="Введите номер удостоверения">
+							</div>
+							<div class="search_button">
+								<button class="btn_style btn">ПОИСК</button>
+							</div>
+						</div>
+						<div class="asps">
+							<div class="asp_display">
+								<div class="asp_card asp1">
+									<div class="asp_info">
+										<div class="asp_name">
+											Рожкова Оксана Александровна
+										</div>
+										<div class="asp_group">
+											АСП-20-01 (09-1)
+										</div>
+										<div class="asp_number">
+											№ 120002
+										</div>
+									</div>
+									<div class="asp_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="asp_card asp2">
+									<div class="asp_info">
+										<div class="asp_name">
+											Петров Петр Петрович
+										</div>
+										<div class="asp_group">
+											АСП-22-01
+										</div>
+										<div class="asp_number">
+											№ 120001
+										</div>
+									</div>
+									<div class="asp_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="asp_card asp3">
+									<div class="asp_info">
+										<div class="asp_name">
+											Иванов Иван Иванович
+										</div>
+										<div class="asp_group">
+											АСП-22-02
+										</div>
+										<div class="asp_number">
+											№ 120000
+										</div>
+									</div>
+									<div class="asp_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+							</div>
+							<div class="asp_display">
+								<div class="asp_card asp4">
+									<div class="asp_info">
+										<div class="asp_name">
+											ФИО
+										</div>
+										<div class="asp_group">
+											Группа
+										</div>
+										<div class="asp_number">
+											№ удост
+										</div>
+									</div>
+									<div class="asp_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="asp_card asp5">
+									<div class="asp_info">
+										<div class="asp_name">
+											ФИО
+										</div>
+										<div class="asp_group">
+											Группа
+										</div>
+										<div class="asp_number">
+											№ удост
+										</div>
+									</div>
+									<div class="asp_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="asp_card asp6">
+									<div class="asp_info">
+										<div class="asp_name">
+											ФИО
+										</div>
+										<div class="asp_group">
+											Группа
+										</div>
+										<div class="asp_number">
+											№ удост
+										</div>
+									</div>
+									<div class="asp_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<script  src="../js/script.js"></script>
+	
+		<script src="../js/script.js"></script>
+		<script src="../js/docsloader.js"></script>
+		<script src="../js/grants-asp-test.js"></script>
 		
 	</body>
 </html>

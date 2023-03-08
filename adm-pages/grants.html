@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Стипендии</title>
+	<link rel="stylesheet" href="../css/a_grantsstyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="../js/preloader.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a class="header__logo">
+						<img src="../img/logo.png" alt="logo soon...">
+					</a>
+					<div>
+						<span class="header__name_my">МОЯ</span><span class="header__name_asp">АСПИРАНТУРА</span>
+					</div>
+					<details class="detail__body" data-toggle="dropdown">
+						<summary class="detail__summary"><img class="detail__summary_img" src="../img/alt.png"><span
+								class="caret" id="caret"></span></summary>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="../adm-pages/account.html" class="header__link">Личный кабинет</a>
+								</li>
+								<li>
+									<a href="../adm-pages/asps.html" class="header__link">Аспиранты</a>
+								</li>
+								<li>
+									<a href="../adm-pages/docs.html" class="header__link">Документы</a>
+								</li>
+								<li>
+									<a href="../adm-pages/grants.html" class="header__link">Стипендии</a>
+								</li>
+								<li>
+									<a href="../adm-pages/timetable.html" class="header__link">Расписание</a>
+								</li>
+								<li>
+									<a href="../adm-pages/contacts.html" class="header__link">Контакты</a>
+								</li>
+								<li>
+									<a href="../adm-pages/login.html" class="header__link">Выйти</a>
+								</li>
+							</ul>
+						</nav>
+					</details>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<div class="content_text">
+					<form class="form_group">
+						<div class="stips">
+							<div class="stip_display">
+								<div class="stip_type cb1">
+									<div class="stip_info">
+										<div class="stip_name">
+											Академическая стипенидия
+										</div>
+										<div class="stip_amount">
+											3600 ₽
+										</div>
+									</div>
+									<div class="stip_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="stip_type cb2">
+									<div class="stip_info">
+										<div class="stip_name">
+											Социальная стипендия
+										</div>
+										<div class="stip_amount">
+											3200 ₽
+										</div>
+									</div>
+									<div class="stip_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="stip_type cb3">
+									<div class="stip_info">
+										<div class="stip_name">
+											Именная стипендия ученого совета 5 разряда
+										</div>
+										<div class="stip_amount">
+											2200 ₽
+										</div>
+									</div>
+									<div class="stip_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+							</div>
+							<div class="stip_display">
+								<div class="stip_type cb4">
+									<div class="stip_info">
+										<div class="stip_name">
+											Именная стипендия ученого совета 4 разряда
+										</div>
+										<div class="stip_amount">
+											4440 ₽
+										</div>
+									</div>
+									<div class="stip_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="stip_type cb5">
+									<div class="stip_info">
+										<div class="stip_name">
+											Именная стипендия ученого совета 3 разряда
+										</div>
+										<div class="stip_amount">
+											6660 ₽
+										</div>
+									</div>
+									<div class="stip_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+								<div class="stip_type cb6">
+									<div class="stip_info">
+										<div class="stip_name">
+											Именная стипендия ученого совета 2 разряда
+										</div>
+										<div class="stip_amount">
+											8880 ₽
+										</div>
+									</div>
+									<div class="stip_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+							</div>
+							<div class="stip_display">
+								<div class="stip_type cb7">
+									<div class="stip_info">
+										<div class="stip_name">
+											Именная стипендия ученого совета 1 разряда
+										</div>
+										<div class="stip_amount">
+											11100 ₽
+										</div>
+									</div>
+									<div class="stip_check">
+										<img class="checkbox_img" src="../img/vg.png">
+										<input type="checkbox" hidden>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn_style btn submit">Назначить стипендию</button>
+					</form>
+					<div class="search_box">
+						<div class="search_name">
+							<input class="search_input" type="text" placeholder="Введите Фамилию Имя Отчество">
+						</div>
+						<div class="search_group">
+							<select class="search_select">
+								<option disabled selected>Выберите номер группы</option>
+								<option>АСП-22-01</option>
+								<option>АСП-22-02</option>
+								<option>АСП-22-03</option>
+								<option>АСП-22-04</option>
+							</select>
+						</div>
+						<div class="search_number">
+							<input class="search_input" type="text" placeholder="Введите номер удостоверения">
+						</div>
+						<div class="search_button">
+							<button class="btn_style">ПОИСК</button>
+						</div>
+					</div>
+					<div class="asps">
+						<div class="asp_display">
+							<div class="asp_card asp1">
+								<div class="asp_info">
+									<div class="asp_name">
+										Рожкова Оксана Александровна
+									</div>
+									<div class="asp_group">
+										АСП-20-01 (09-1)
+									</div>
+									<div class="asp_number">
+										№ 120002
+									</div>
+								</div>
+								<div class="asp_check">
+									<img class="checkbox_img" src="../img/vg.png">
+									<input type="checkbox" hidden>
+								</div>
+							</div>
+							<div class="asp_card asp2">
+								<div class="asp_info">
+									<div class="asp_name">
+										Петров Петр Петрович
+									</div>
+									<div class="asp_group">
+										АСП-22-01
+									</div>
+									<div class="asp_number">
+										№ 120001
+									</div>
+								</div>
+								<div class="asp_check">
+									<img class="checkbox_img" src="../img/vg.png">
+									<input type="checkbox" hidden>
+								</div>
+							</div>
+							<div class="asp_card asp3">
+								<div class="asp_info">
+									<div class="asp_name">
+										Иванов Иван Иванович
+									</div>
+									<div class="asp_group">
+										АСП-22-02
+									</div>
+									<div class="asp_number">
+										№ 120000
+									</div>
+								</div>
+								<div class="asp_check">
+									<img class="checkbox_img" src="../img/vg.png">
+									<input type="checkbox" hidden>
+								</div>
+							</div>
+						</div>
+						<div class="asp_display">
+							<div class="asp_card asp4">
+								<div class="asp_info">
+									<div class="asp_name">
+										ФИО
+									</div>
+									<div class="asp_group">
+										Группа
+									</div>
+									<div class="asp_number">
+										№ удост
+									</div>
+								</div>
+								<div class="asp_check">
+									<img class="checkbox_img" src="../img/vg.png">
+									<input type="checkbox" hidden>
+								</div>
+							</div>
+							<div class="asp_card asp5">
+								<div class="asp_info">
+									<div class="asp_name">
+										ФИО
+									</div>
+									<div class="asp_group">
+										Группа
+									</div>
+									<div class="asp_number">
+										№ удост
+									</div>
+								</div>
+								<div class="asp_check">
+									<img class="checkbox_img" src="../img/vg.png">
+									<input type="checkbox" hidden>
+								</div>
+							</div>
+							<div class="asp_card asp6">
+								<div class="asp_info">
+									<div class="asp_name">
+										ФИО
+									</div>
+									<div class="asp_group">
+										Группа
+									</div>
+									<div class="asp_number">
+										№ удост
+									</div>
+								</div>
+								<div class="asp_check">
+									<img class="checkbox_img" src="../img/vg.png">
+									<input type="checkbox" hidden>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/script.js"></script>
+	<script src="../js/grants-script.js"></script>
+	<script src="../js/grants-asp-test.js"></script>
+
+</body>
+
+</html>

@@ -13,7 +13,7 @@ button.onclick = ()=>{
 input.addEventListener("change", function(){
   file = this.files[0];
   let fileType = file.type; //getting selected file type
-  let validExtensions = ["image/jpeg", "image/jpg", "image/png", "application/pdf", "application/msword", "application/excel", "application/vnd.ms-excel", "application/x-excel", "application/x-msexcel"]; //adding some valid image extensions in array
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png", "application/pdf", "application/msword","application/vnd.openxmlformats-officedocument.wordprocessingml.document"]; //adding some valid image extensions in array
   if(validExtensions.includes(fileType)){
     dropArea.classList.add("active");
     //Create datatransfer to assign file to input

@@ -4,7 +4,7 @@
 		<title>Мой аккаунт</title>
 		<link rel="stylesheet" href="../css/accstyle.css">
 		<link rel="stylesheet" href="../css/cropper.css">
-		<link rel="stylesheet" href="../css/main-style.css">
+		<link rel="stylesheet" href="../css/cropperstyle.css">
 		<meta charset="UTF-8">
   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,19 +36,16 @@
 									<a href="../adm-pages/account.html" class="header__link">Личный кабинет</a>
 								</li>
 								<li>
-									<a href="../adm-pages/education.html" class="header__link">Успеваемость</a>
+									<a href="../adm-pages/asps.html" class="header__link">Аспиранты</a>
 								</li>
 								<li>
 									<a href="../adm-pages/docs.html" class="header__link">Документы</a>
 								</li>
 								<li>
-									<a href="../adm-pages/achievments.html" class="header__link">Достижения</a>
+									<a href="../adm-pages/grants.html" class="header__link">Стипендии</a>
 								</li>
 								<li>
-									<a href="../adm-pages/timetable.html" class="header__link">Расписание экзаменов</a>
-								</li>
-								<li>
-									<a href="../adm-pages/news.html" class="header__link">Новости</a>
+									<a href="../adm-pages/timetable.html" class="header__link">Расписание</a>
 								</li>
 								<li>
 									<a href="../adm-pages/contacts.html" class="header__link">Контакты</a>
@@ -91,7 +88,7 @@
 			<a href="#header" class="popup_area"></a>
 			<div class="popup_body">
 				<div class="popup_content">
-					<a href="#header" class="popup_close">X</a>
+					<a href="#header" class="popup_close"><img src="../img/x.png"></a>
 						<div class="popup_title">Изменить профиль</div>
 						<div class="popup_buttons">
 							<input class="popup_input" type="name" name="" placeholder="ФИО">
@@ -108,7 +105,7 @@
 			<a href="#header" class="popup_area"></a>
 			<div class="popup_body">
 				<div class="popup_content">
-					<a href="#header" class="popup_close">X</a>
+					<a href="#header" class="popup_close"><img src="../img/x.png"></a>
 						<div class="popup_title">Изменить пароль</div>
 						<div class="popup_buttons">
 							<input class="popup_input" type="password" name="" placeholder="Старый пароль">
@@ -123,26 +120,26 @@
 			<a href="#header" class="popup_area"></a>
 			<div class="popup_body">
 				<div class="popup_content">
-					<a href="#header" class="popup_close">X</a>
+					<a href="#header" class="popup_close"><img src="../img/x.png"></a>
 					<div class="popup_title">Изменить фото</div>
-						<div class="popup_text">
-							<div class="photocontainer">
-								<div class="image-container">
-									<div class="image-workspace">
-										<img src="" alt="">
-										<span class="image-span">Загрузите изображение</span>
-									</div>
-								</div>
-								<div class="preview-container" style="display: none;">
-										<span style="display: none;"></span>
-								</div>
-								<div class="action-button">
-									<button class="upload">Загрузить фото</button>
-									<input type="file" id="hidden-upload" class="hidden-upload" accept="image/*">
-									<button class="submit" onclick="location.href='#header'">Сохранить изменения</button>
-									<button class="delete" onclick="location.href='#header'">Удалить фото профиля</button>
+					<div class="popup_text">
+						<div class="photocontainer">
+							<div class="image-container">
+								<div class="image-workspace">
+									<img src="" alt="">
+									<span class="image-span">Загрузите изображение</span>
 								</div>
 							</div>
+							<div class="preview-container" style="display: none;">
+									<span style="display: none;"></span>
+							</div>
+							<div class="action-button">
+								<button class="upload">Загрузить фото</button>
+								<input type="file" id="hidden-upload" class="hidden-upload" accept="image/*">
+								<button class="submit" onclick="location.href='#header'">Сохранить изменения</button>
+								<button class="delete" onclick="location.href='#header'">Удалить фото профиля</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

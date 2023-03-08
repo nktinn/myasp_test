@@ -266,43 +266,55 @@ summary {
 .content_text{
 	width: 100%;
 	margin: auto;
-	display: flex;
-	justify-content: space-between;
+	display: block;
 }
 
-.personal{
+.content_document{
 	display: flex;
+	margin-bottom: 20px;
 	width: 100%;
 }
 
-.personal_display{
-	margin: auto;
-	margin-left: 10%;
-	font-family: 'Roboto', sans-serif;
-	max-width: 50%;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 27px;
+.document_img{
+	display: block;
+	margin: auto 0;
+	height: 50px;
 }
 
-.personal_photo{
-	height: 280px;
-	background-color: #F9F9F9;
+.timet_head{
+	display: block;
+	width: 100%;
+	color: rgb(234, 234, 234);
+	margin: auto 0;
+	overflow: hidden;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.timet_head::after{
+	content:'';
+	display: block;
+	box-sizing:border-box;
+	width: 100%;
+	height:2px;
+	background:rgb(234, 234, 234);
+	border-width:0 .5em 0;
 }
 
-.personal_science{
-	max-width: 100%;
-	margin-top: 30px;
-}
-
-.personal_contacts{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+.document_text{
+	width: 100%;
+	height: auto;
+	display: flex;
 	font-size: 20px;
-	line-height: 23px;
-	margin: auto;
-	margin-top: 5%;
-	text-align: center;
+	justify-content: space-between;
+}
+
+.document_name{
+	padding: 0px 20px;
+	margin: auto 0;
+}
+
+.document_disp{
+    display: flex;
 }
 
 .buttons{
@@ -316,7 +328,7 @@ summary {
 	cursor: pointer;
 	display:inline-block;
 	margin-top: 8px;
-	width: 100%;
+	width: max-content;
 	color:#212529;
 	white-space: nowrap;
 	background-color:#f8f9fa;
@@ -346,186 +358,16 @@ summary {
 }
 
 
-
-//Popups
-
-.popup{
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	color: white;
-	z-index: 100;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.9);
-	top: 0;
-	left: 0;
-	opacity: 0;
-	visibility: hidden;
-	overflow-y: auto;
-	overflow-x: hidden;
-	transition: all 0.6s ease 0s;
-}
-
-.popup:target{
-	opacity: 1;
-	visibility: visible;
-}
-.popup:target .popup_content{
-	transform: translate(0px, 0px);
-	opacity: 1;
-}
-
-
-.popup_area{
-	cursor: default;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
-
-.popup_body{
-	max-height: 100%;
-	height: auto;
-	width: auto;
-	display: flex;
-	justify-content: center;
-	padding: 30px 10px;
-}
-
-.popup_content{
-	border-radius: 4px;
-	background-color: #fff;
-	color: #000;
-	max-height: 100%;
-	height: auto;
-	padding: 30px;
-	position: relative;
-	transition: all 0.6s ease 0s;
-	opacity: 0;
-	transform: translate(0px, -100%);
-}
-
-.popup_close{
-	position: absolute;
-	color: #000;
-	text-decoration: none;
-	right: 10px;
-	top: 10px;
-	font-size: 20px;
-}
-
-
-.popup_title{
-	padding: 10px;
-	font-size: 30px;
-	margin-top: 0.1em;
-	margin-bottom: 1em;
-}
-
-.popup_text{
-	height: 100%;
-}
-
-.popup_buttons{
-	height: 100%;
-	padding: 0 10px;
-	max-width: 400px;
-}
-
-.popup_input{
-	padding: 0 10px;
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 30px;
-	color: grey;
-	background: white;
-	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
-	border-radius: 6px;
-	outline: none;
-	min-height: 38px;
-	width: 100%;
-	margin-bottom: 15px;
-	appearance: none;
-}
-
-
-.upload,.delete,.submit{
-    opacity: 1;
-	text-decoration: none;
-	cursor: pointer;
-	display: inline-block;
-	margin-top: 8px;
-	width: 100%;
-	color:#212529;
-	background-color:#f8f9fa;
-	border-color:#f8f9fa;
-	text-align:center;
-    vertical-align: middle;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
-	border:3px solid transparent;
-	padding:.375rem 2rem;
-	line-height:1.5;
-	font-size:0.9rem;
-	border-radius:.25rem;
-    transition: all 0.4s ease-in-out;
-}
-.upload:hover{
-	color:#212529;
-	background-color:#e2e6ea;
-	border-color:#dae0e5;
-}
-.delete:hover{
-	color:#212529;
-	background-color:#f4433690;
-	border-color:#f443364f;
-}
-.submit:hover{
-	color:#212529;
-	background-color:#4CAF5090;
-	border-color:#4caf504f;
-}
-.upload.focus,.upload:focus{
-	color:#212529;
-	background-color:#f8f9fa;
-	border-color:#dae0e5;
-}
-.delete.focus,.delete:focus{
-	color:#212529;
-	background-color:#f8f9fa;
-	border-color:#f443364f;
-}
-.submit.focus,.submit:focus{
-	color:#212529;
-	background-color:#f8f9fa;
-	border-color:#4caf504f;
-}
-
-
 /*Adaptive*/
 @media (max-width: 1900px){
 	.content{
 		width: 70%;
-	}
-
-	.personal_photo{
-		height: 240px;
 	}
 }
 
 @media (max-width: 1700px){
 	.content{
 		width: 75%;
-	}
-
-	.personal_photo{
-		height: 240px;
 	}
 }
 
@@ -534,24 +376,12 @@ summary {
 		width: 80%;
 		padding-top: 130px;
 	}
-
-	.personal_photo{
-		height: 240px;
-	}
-
-	.popup_input {
-	  font-size: 19px;
-	}
 }
 
 @media (max-width: 1200px){
 	.content{
 		width: 90%;
 		padding-top: 130px;
-	}
-
-	.personal_photo{
-		height: 240px;
 	}
 }
 
@@ -591,74 +421,19 @@ summary {
 		max-width: 100%;
 	}
 
-	.personal{
-		display: block;
-		width: 100%;
-		margin: auto;
-	}
-	
-	.personal_photo{
-		height: 180px;
-		max-width: 100%;
-	}
-
-	.personal_photo{
-		display: block;
-		height: 240px;
-		margin: auto;
-	}
-
-	.personal_display{
-		display: block;
-		font-size: 22px;
-		line-height: 30px;
-		max-width: 90%;
-		text-align: center;
-		margin: auto;
-	}
-
-	.personal_info{
-		display: block;
-		margin: auto;
-		margin-top: 20px;
-	}
-
-	.personal_science{
-		display: block;
-		margin: auto;
-		margin-top: 20px;
-	}
-
-	.personal_contacts{
-		max-width: 100%;
-		width: 90%;
-		font-size: 18px;
-		margin: 20px auto 0px auto;
-	}
-
-	.buttons{
-		display: block;
-		margin: 30px auto 0px auto;
-		width: 60%;
-	}
-
 	.btn_style{
 		margin-right: 20px;
 	}
-
-	.popup_content{
-	   padding: 15px;
-   }
-
-   .popup_title{
-	   font-size: 26px;
-   }
 }
 
 @media (max-width: 900px){
 	.container{
 		padding: 0px 50px;
 	}
+
+    .document_disp{ 
+        margin-bottom: 10px;
+    }
 
 	.header__name_my{
 		font-size: 28px;
@@ -674,6 +449,7 @@ summary {
 
 	.header__link{
 		font-size: 18px;
+		line-height: 35px;
 	}
 
 	.detail__body{
@@ -683,18 +459,34 @@ summary {
 	.detail__summary_img{
 		height: 60px;
 	}
-	
-	.personal_photo{
-		height: 220px;
+
+	.content_document{
+		display: block;
 	}
 
-	.popup_content{
-	   padding: 15px;
-   }
+	.document_name{
+		margin: 10px 5px;
+		padding-left: 0;
+	}
 
-	.popup_title{
-	   font-size:35px;
-   }
+	.document_text{
+		display: block;
+		font-size: 18px;
+	}
+
+	.btn_style{
+		display: block;
+		margin: 0 auto;
+		width: min-content;
+	}
+
+	.timet_head{
+		font-size: 25px;
+	}
+	
+	.document_img{
+		height: 35px;
+	}
 }
 
 @media (max-width: 767px){
@@ -746,10 +538,6 @@ summary {
 		width: 90%;
 		padding-top: 120px;
 	}
-	
-	.personal_photo{
-		height: 200px;
-	}
 
 	summary::after{
 		border-top: 7px dashed;
@@ -763,18 +551,17 @@ summary {
    		border-bottom: 7px solid black;
  	}
 
-	 .popup_content{
-		padding: 10px;
-	}
-
-	 .popup_title{
-		font-size:30px;
-		padding-top: 20px;
-	}
-
-	.popup_input {
-	  font-size: 16px;
-	}
+	 .timet_head{
+		 font-size: 20px;
+	 }
+	 
+	 .document_img{
+		 height: 35px;
+	 }
+ 
+	 .document_text{
+		 font-size: 16px;
+	 }
 }
 
 @media (max-width: 540px){
@@ -813,30 +600,15 @@ summary {
 
 	.header__link{
 		font-size: 16px;
+		line-height: 33px;
 	}
 
 	.content{
 		padding-top: 80px;
 	}
 
-	.personal_display{
-		font-size: 20px;
-	}
-
-	.personal_contacts{
-		font-size: 16px;
-	}
-	
-	.personal_photo{
-		height: 180px;
-	}
-
-	.buttons{
-		width: 90%;
-	}
-
 	.btn_style{
-		margin-bottom: 8px;
+		font-size: 0.9rem;
 	}
 
 	summary::after{
@@ -851,20 +623,18 @@ summary {
    		border-bottom: 5px solid black;
  	}
 
-	 .popup_content{
-		padding: 5px;
-	}
+	 .content_text{
+		 width: 100%;
+		 font-size: 15px;
+	 }
 
-	 .popup_title{
-		font-size: 24px;
-		padding-top: 20px;
-	}
-
-	.popup_input {
-		min-height: 35px;
-		margin-bottom: 12px;
-		font-size: 16px;
-	}
+	 .timet_head{
+		 font-size: 17px;
+	 }
+	 
+	 .document_img{
+		 height: 30px;
+	 }
 }
 
 @media (max-width: 335px){
@@ -895,26 +665,11 @@ summary {
 
 	.header__link{
 		font-size: 14px;
-	}
-
-	.personal_display{
-		font-size: 18px;
-	}
-
-	.personal_contacts{
-		font-size: 14px;
-	}
-	
-	.personal_photo{
-		height: 150px;
+		line-height: 31px;
 	}
 
 	.btn_style{
 		font-size:0.8rem;
-	}
-
-	.buttons{
-		width: 100%;
 	}
 
 	summary::after{
@@ -929,18 +684,16 @@ summary {
    		border-bottom: 4px solid black;
  	}
 
-	.popup_content{
-		padding: 5px;
-	}
-
-	 .popup_title{
-		font-size: 20px;
-		padding-top: 20px;
-	}
-
-	.popup_input {
-		min-height: 37px;
-		margin-bottom: 9px;
+	.content_text{
+		width: 100%;
 		font-size: 14px;
+	}
+
+	.timet_head{
+		font-size: 15px;
+	}
+	
+	.document_img{
+		height: 30px;
 	}
 }

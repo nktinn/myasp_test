@@ -479,6 +479,7 @@ summary::-webkit-details-marker {
 		border: 2px solid rgb(240, 240, 240);
 		border-top: none;
 		border-right: none;
+		padding-top: 10px;
 		display: block;
 		height: auto;
 		width: 350px;
@@ -488,6 +489,7 @@ summary::-webkit-details-marker {
 		border: 2px solid rgb(240, 240, 240);
 		border-top: none;
 		border-right: none;
+		padding-top: 10px;
 		display: block;
 		height: auto;
 		width: 200px;
@@ -496,6 +498,7 @@ summary::-webkit-details-marker {
 	.stip_is {
 		border: 2px solid rgb(240, 240, 240);
 		border-top: none;
+		padding-top: 10px;
 		display: block;
 		height: auto;
 		width: 50px;
@@ -529,6 +532,7 @@ summary::-webkit-details-marker {
 
 	.header__link {
 		font-size: 18px;
+		line-height: 35px;
 	}
 
 	.detail__body {
@@ -708,6 +712,7 @@ summary::-webkit-details-marker {
 
 	.header__link {
 		font-size: 16px;
+		line-height: 33px;
 	}
 
 	.content {
@@ -845,6 +850,7 @@ summary::-webkit-details-marker {
 
 	.header__link {
 		font-size: 14px;
+		line-height: 31px;
 	}
 
 	summary::after {

@@ -256,10 +256,6 @@ summary::-webkit-details-marker {
   height: 50px;
 }
 
-.document_download {
-  display: none;
-}
-
 .document_date {
   display: block;
   width: 100%;
@@ -267,6 +263,7 @@ summary::-webkit-details-marker {
   margin: auto 0;
   overflow: hidden;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .document_date:after {
@@ -405,6 +402,7 @@ summary::-webkit-details-marker {
   }
   .header__link {
     font-size: 18px;
+    line-height: 35px;
   }
   .detail__body {
     width: 100px;
@@ -524,6 +522,7 @@ summary::-webkit-details-marker {
   }
   .header__link {
     font-size: 16px;
+    line-height: 33px;
   }
   .content {
     padding-top: 80px;
@@ -574,6 +573,7 @@ summary::-webkit-details-marker {
   }
   .header__link {
     font-size: 14px;
+    line-height: 31px;
   }
   .btn_style {
     font-size: 0.8rem;

@@ -388,6 +388,7 @@ summary::-webkit-details-marker {
   }
   .header__link {
     font-size: 18px;
+    line-height: 35px;
   }
   .detail__body {
     width: 100px;
@@ -503,6 +504,7 @@ summary::-webkit-details-marker {
   }
   .header__link {
     font-size: 16px;
+    line-height: 33px;
   }
   .content {
     padding-top: 80px;
@@ -546,6 +548,7 @@ summary::-webkit-details-marker {
   }
   .header__link {
     font-size: 14px;
+    line-height: 31px;
   }
   summary::after {
     border-top: 4px dashed;
